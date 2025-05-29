@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { ShoppingCart, Users, Globe, Instagram, Mail, Video, Calendar, Store, Funnel } from 'lucide-react';
+import { ShoppingCart, Users, Globe, Instagram, Mail, Video, Calendar, Store, Fuel as Funnel } from 'lucide-react';
 
 export default function Services() {
   const [ref, inView] = useInView({
