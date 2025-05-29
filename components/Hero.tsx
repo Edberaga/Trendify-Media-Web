@@ -1,7 +1,7 @@
 'use client';
 import banner from '../public/banner.png'
 import { motion } from 'framer-motion';
-import { Monitor, BarChart2, Wallet, FileText } from 'lucide-react';
+import { HandCoins, CodeXml, Store, Monitor } from 'lucide-react';
 import Image from 'next/image';
 import data from './data/Hero.json'
 import Link from 'next/link';
@@ -9,20 +9,20 @@ import Link from 'next/link';
 export default function Hero() {
   const services = [
     {
+      icon: <HandCoins className="w-6 h-6 text-white" />,
+      title: 'Sales Funnels',
+    },
+    {
+      icon: <CodeXml className="w-6 h-6 text-white" />,
+      title: 'Website Development',
+    },
+    {
       icon: <Monitor className="w-6 h-6 text-white" />,
-      title: 'Tech Development',
+      title: 'Digital Products',
     },
     {
-      icon: <BarChart2 className="w-6 h-6 text-white" />,
-      title: 'Customer Insight',
-    },
-    {
-      icon: <Wallet className="w-6 h-6 text-white" />,
-      title: 'Financial Planning',
-    },
-    {
-      icon: <FileText className="w-6 h-6 text-white" />,
-      title: 'Legal Documentation',
+      icon: <Store className="w-6 h-6 text-white" />,
+      title: 'Ecommerce',
     },
   ];
 
@@ -48,7 +48,7 @@ export default function Hero() {
               {data.Title}
             </h2>
             <p className="text-lg text-gray-600 mb-8">
-              {data.Desc}
+              {data.BeforeDesc}<span className='primary font-bold'>{data.MarkedDesc}</span>{data.AfterDesc}
             </p>
             <div className="flex gap-4 mb-12">
               <Link href="#about">
@@ -72,17 +72,17 @@ export default function Hero() {
             </div>
             
             <div>
-              <h3 className="text-gray-900 font-semibold mb-4">Our Services:</h3>
+              <h3 className="text-gray-900 font-semibold mb-4">Our Core Services:</h3>
               <div className="grid grid-cols-2 gap-4">
                 {services.map((service, index) => (
                   <motion.div
                     key={service.title}
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.4 + index * 0.1 }}
-                    className="p-4 bg-sky-100 rounded-lg flex items-center gap-3"
+                    transition={{ delay: 0.6 + index * 0.3 }}
+                    className="p-4 bg-sky-200 rounded-lg flex items-center gap-3"
                   >
-                    <div className="w-10 h-10 bg-sky-300 rounded-lg flex items-center justify-center">
+                    <div className="w-10 h-10 btn-primary rounded-lg flex items-center justify-center">
                       {service.icon}
                     </div>
                     <span className="text-sm font-medium text-gray-800">{service.title}</span>
@@ -109,8 +109,8 @@ export default function Hero() {
               <motion.div
                 initial={{ opacity: 0, x: 20 }}
                 animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: 0.5 }}
-                className="absolute -right-4 top-1/4 z-10 bg-coral-500 text-white px-4 py-2 rounded-lg flex items-center gap-2"
+                transition={{ delay: 1.5 }}
+                className="absolute left-[10px] right-[70%] top-24 z-10 btn-primary px-4 py-2 rounded-lg flex items-center gap-2"
               >
                 <div className="w-8 h-8 bg-sky-300 rounded-full flex items-center justify-center">
                   🏆
@@ -123,11 +123,11 @@ export default function Hero() {
               <motion.div
                 initial={{ opacity: 0, x: 20 }}
                 animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: 0.7 }}
+                transition={{ delay: 1.7 }}
                 className="absolute -right-4 bottom-1/4 z-10 bg-white shadow-lg px-4 py-2 rounded-lg"
               >
-                <div className="font-bold text-gray-900">Our Experts</div>
-                <div className="flex -space-x-2 mt-2">
+                <h2 className="font-bold text-gray-900">Our Experts</h2>
+                <div className="flex -space-x-2 mt-2 h-[32px]">
                   <Image
                     src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg"
                     alt="Expert 1"
