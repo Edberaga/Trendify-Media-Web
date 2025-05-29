@@ -35,7 +35,7 @@ export default function Navigation() {
               className="h-8 w-auto"
             />
           </Link>
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex space-x-8 font-bold uppercase">
             {['Home', 'About', 'Services', 'Portfolio', 'Contact'].map((item) => (
               <Link
                 key={item}
