@@ -1,5 +1,7 @@
 {
     "Title": "The Ultimate A.I. Powered Community Building and Sales Funnel Platform",
     "SubTitle": "For experts, Coaches, content creators, and Entrepreneurs",
-    "Desc": "Unite interactive courses, discussions, memberships, chats, events, sales funnels, emails, e-commerce, calendars and more, all under your brand, in one simple dashboard."
+    "BeforeDesc": "Unite interactive courses, discussions, memberships, chats, events, sales funnels, emails, e-commerce, calendars and more, ",
+    "MarkedDesc": "all under your brand",
+    "AfterDesc": ", in one simple dashboard"
 }
