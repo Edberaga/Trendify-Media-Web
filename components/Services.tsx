@@ -34,7 +34,7 @@ export default function Services() {
   ];
 
   return (
-    <section id="services" className="py-20 bg-muted">
+    <section id="services" className="py-24 bg-muted">
       <div className="container mx-auto px-4">
         <motion.div
           ref={ref}

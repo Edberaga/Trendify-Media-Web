@@ -29,7 +29,7 @@ export default function Projects() {
   ];
 
   return (
-    <section id="portfolio" className="py-20 bg-background">
+    <section id="portfolio" className="py-24 bg-background">
       <div className="container mx-auto px-4">
         <motion.div
           ref={ref}
