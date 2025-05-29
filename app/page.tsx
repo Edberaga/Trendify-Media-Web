@@ -1,5 +1,5 @@
 'use client';
-
+import './styles.css'
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { Camera, Users, Briefcase, Phone, Home } from 'lucide-react';
