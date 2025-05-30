@@ -27,7 +27,7 @@ export default function Hero() {
   ];
 
   return (
-    <section id="home" className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 relative overflow-hidden">
+    <section id="home" className="min-h-screen bg-gradient-to-br relative overflow-hidden">
       <div className="absolute top-0 left-0 w-24 h-24 grid grid-cols-3 gap-2 p-4">
         {[...Array(9)].map((_, i) => (
           <div key={i} className="w-1.5 h-1.5 rounded-full bg-coral-500 opacity-20" />
@@ -44,11 +44,11 @@ export default function Hero() {
             <h6 className='primary uppercase font-bold text-gray-900 mb-3'>
               {data.SubTitle}
             </h6>
-            <h2 className="text-2xl lg:text-4xl font-bold text-gray-900 mb-6">
-              {data.Title}
-            </h2>
+            <h1 className="text-2xl lg:text-5xl font-bold text-gray-900 mb-6">
+              Trendify Media<span className='primary'>:</span> Your All-in-One A.I, Platform for Community & Sales<span className='primary'>.</span>
+            </h1>
             <p className="text-lg text-gray-600 mb-8">
-              {data.BeforeDesc}<span className='primary font-bold'>{data.MarkedDesc}</span>{data.AfterDesc}
+              Use Trendify Media to run courses, chats, events, sales funnels, email, e-commerce & <span className='primary-text'>all under your brand</span> in one smart dashboard.
             </p>
             <div className="flex gap-4 mb-12">
               <Link href="#about">
@@ -149,7 +149,7 @@ export default function Hero() {
                     height={32}
                     className="rounded-full border-2 border-white"
                   />
-                  <div className="w-8 h-8 rounded-full bg-purple-500 text-white text-xs flex items-center justify-center border-2 border-white">
+                  <div className="w-8 h-8 rounded-full btn-primary text-xs flex items-center justify-center border-2 border-white">
                     +4
                   </div>
                 </div>
