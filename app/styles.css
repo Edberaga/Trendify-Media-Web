@@ -6,8 +6,9 @@ body {
     line-height: 1.5em;
 }
 
-h1, h2, h3 {
-    line-height: 1.5em;
+h1, h2 {
+  font-weight: 800 !important;
+  line-height: 1.2em !important;
 }
 
 /*Global Colours*/

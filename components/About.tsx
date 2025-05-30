@@ -84,7 +84,7 @@ export default function About() {
               initial={{ opacity: 0, y: 20 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.6 }}
-              className="px-6 py-3 btn-primary rounded-lg hover:bg-purple-700 transition-colors mb-20"
+              className="px-6 py-3 btn-primary rounded-lg hover:bg-black transition-colors mb-20"
             >
               Get started for free
             </motion.button>
@@ -142,7 +142,7 @@ export default function About() {
               initial={{ opacity: 0, y: 20 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.9 }}
-              className="px-6 py-3 btn-primary text-white rounded-lg hover:bg-purple-700 transition-colors mt-12"
+              className="px-6 py-3 btn-primary text-white rounded-lg hover:bg-black transition-colors mt-12"
             >
               Get started for free
             </motion.button>
