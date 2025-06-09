@@ -5,6 +5,7 @@ import { HandCoins, CodeXml, Store, Monitor } from 'lucide-react';
 import Image from 'next/image';
 import data from './data/Hero.json'
 import Link from 'next/link';
+import { Reveal } from './animation/Reveal';
 
 export default function Hero() {
   const services = [
@@ -41,19 +42,28 @@ export default function Hero() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h6 className='primary uppercase font-bold text-gray-900 mb-3'>
-              {data.SubTitle}
-            </h6>
+            <Reveal>
+              <h6 className='primary uppercase font-bold text-gray-900 mb-3'>
+                {data.SubTitle}
+              </h6>
+            </Reveal>
+            <Reveal>
             <h1 className="text-2xl lg:text-5xl font-bold text-gray-900 mb-6">
               Trendify Media<span className='primary'>:</span> Your All-in-One A.I, Platform for Community & Sales<span className='primary'>.</span>
             </h1>
+            </Reveal>
+            
+            <Reveal>
             <p className="text-lg text-gray-600 mb-8">
-              Use Trendify Media to run courses, chats, events, sales funnels, email, e-commerce & <span className='primary-text'>all under your brand</span> in one smart dashboard.
+              Use Trendify Media to run courses, chats, events, sales funnels, email, e-commerce & <span className='primary-text'>all under your brand</span> in one dashboard.
             </p>
+            </Reveal>
+
+            <Reveal>
             <div className="flex gap-4 mb-12">
               <Link href="#about">
                 <motion.button
-                  initial={{ opacity: 0, y: 20 }}
+                  initial={{ opacity: 0, y: 50 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.2 }}
                   className="px-6 py-3 btn-primary shadow-indigo-500/50 rounded-lg hover:bg-purple-600 transition-colors"
@@ -70,6 +80,7 @@ export default function Hero() {
                 Learn More
               </motion.button>
             </div>
+            </Reveal>
             
             <div>
               <h3 className="text-gray-900 font-semibold mb-4">Our Core Services:</h3>
