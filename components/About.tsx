@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { Check, X } from 'lucide-react';
+import { Reveal } from './animation/Reveal';
 
 export default function About() {
   const [ref, inView] = useInView({
@@ -21,10 +22,12 @@ export default function About() {
           className="max-w-4xl mx-auto"
         >
           <div className="text-center mb-16">
+            <Reveal>
             <h6 className="primary uppercase font-bold mb-4">
               UNLEASH YOUR CREATIVITY AND MAXIMIZE YOUR MARKETING POTENTIAL WITH TRENDIFY - THE ULTIMATE ALL-IN-ONE SOFTWARE FOR MODERN CREATORS.
             </h6>
-            <h2 className="text-4xl font-bold mb-8">Why Should Creators Use Trendify?</h2>
+            </Reveal>
+            <Reveal><h2 className="text-4xl font-bold mb-8">Why Should Creators Use Trendify?</h2></Reveal>
             <div className="grid md:grid-cols-2 gap-8 mb-16">
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
@@ -89,8 +92,8 @@ export default function About() {
               Get started for free
             </motion.button>
 
-            <h6 className="primary uppercase font-bold mb-4">WHY YOU NEED THIS</h6>
-            <h2 className="text-4xl font-bold mb-12">Before vs After TRENDIFY</h2>
+            <Reveal><h6 className="primary uppercase font-bold mb-4">WHY YOU NEED THIS</h6></Reveal>
+            <Reveal><h2 className="text-4xl font-bold mb-12">Before vs After TRENDIFY</h2></Reveal>
             
             <div className="grid md:grid-cols-2 gap-8">
               <motion.div
