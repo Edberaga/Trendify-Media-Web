@@ -19,15 +19,20 @@ export default function About() {
           initial={{ opacity: 0, y: 50 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
-          className="max-w-4xl mx-auto"
+          className="max-w-6xl mx-auto"
         >
+          {/* Main heading */}
           <div className="text-center mb-16">
             <Reveal>
-            <h6 className="primary uppercase font-bold mb-4">
-              UNLEASH YOUR CREATIVITY AND MAXIMIZE YOUR MARKETING POTENTIAL WITH TRENDIFY - THE ULTIMATE ALL-IN-ONE SOFTWARE FOR MODERN CREATORS.
-            </h6>
+              <h6 className="primary uppercase font-bold mb-4 text-center">
+                UNLEASH YOUR CREATIVITY AND MAXIMIZE YOUR MARKETING POTENTIAL WITH TRENDIFY - THE ULTIMATE ALL-IN-ONE SOFTWARE FOR MODERN CREATORS.
+              </h6>
             </Reveal>
-            <Reveal><h2 className="text-4xl font-bold mb-8">Why Should Creators Use Trendify?</h2></Reveal>
+            <Reveal>
+              <h2 className="text-4xl font-bold mb-8 text-center">Why Should Creators Use Trendify?</h2>
+            </Reveal>
+            
+            {/* Benefits grid */}
             <div className="grid md:grid-cols-2 gap-8 mb-16">
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
@@ -92,8 +97,15 @@ export default function About() {
               Get started for free
             </motion.button>
 
-            <Reveal><h6 className="primary uppercase font-bold mb-4">WHY YOU NEED THIS</h6></Reveal>
-            <Reveal><h2 className="text-4xl font-bold mb-12">Before vs After TRENDIFY</h2></Reveal>
+            {/* Before vs After section */}
+            <div className="text-center mb-12">
+              <Reveal>
+                <h6 className="primary uppercase font-bold mb-4 text-center">WHY YOU NEED THIS</h6>
+              </Reveal>
+              <Reveal>
+                <h2 className="text-4xl font-bold mb-12 text-center">Before vs After TRENDIFY</h2>
+              </Reveal>
+            </div>
             
             <div className="grid md:grid-cols-2 gap-8">
               <motion.div
